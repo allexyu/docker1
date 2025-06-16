@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  blum:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: blum
+    container_name: blum
+    ports:
+      - "5000:8000"
